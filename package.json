@@ -1,0 +1,25 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "source": "index.html",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"sass --style=expanded --watch src/scss:src/dist\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "sass --style=expanded --watch src/scss:src/dist",
+    "serve": "parcel serve --src/dist-dir output"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "parcel": "^2.13.3",
+    "sass-embedded": "^1.83.4",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "normalize.css": "^8.0.1"
+  }
+}
