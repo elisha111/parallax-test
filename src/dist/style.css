@@ -1,0 +1,41 @@
+.yellow {
+  width: 100px;
+  height: 100px;
+}
+
+.yellow {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.block {
+  width: 100px;
+  height: 200px;
+  background: blue;
+}
+
+/* всплывашка */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  /* some rules */
+}
+
+.close {
+  /* some rules */
+}
+
+/*# sourceMappingURL=style.css.map */
