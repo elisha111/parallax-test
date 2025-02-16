@@ -1,0 +1,19 @@
+// АДАПТИВ
+$index: calc(1vw + 1vh);
+
+// ЦВЕТА
+$light-color: #f5f5f5;
+$dark-color: #151515;
+
+$light-border: rgb(255 255 255 / .09);
+$dark-border: rgb(0 0 0 / .1);
+
+$light-hover: rgb(255 255 255 / .05);
+$dark-hover: rgb(0 0 0 / .05);
+
+$dark-step: rgb(0 0 0 / .025);
+$light-step: rgb(255 255 255 / .025);
+
+// АНИМАЦИИ
+$transition-cursor: 2s cubic-bezier(0.05, 0.5, 0, 1);
+$transition: 1.25s cubic-bezier(0.2, 0.5, 0, 1);
