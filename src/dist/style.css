@@ -1,44 +1,9 @@
-.yellow {
-  width: 100px;
-  height: 100px;
-}
-
 @font-face {
   font-family: arsenal_f;
   src: url(../../public/fonts/arsenal-regular.woff2);
 }
 body {
   font-family: arsenal_f;
-}
-
-.yellow {
-  background: red;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: nowrap;
-}
-
-.block {
-  width: 100px;
-  height: 200px;
-  background: blue;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-:root {
-  color-scheme: light dark;
 }
 
 body {
@@ -133,6 +98,178 @@ body {
   z-index: -2;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1344px;
+  margin-inline: auto;
+}
+
+.b-product {
+  margin-bottom: 100px;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.b-product p {
+  margin: 0;
+}
+.b-product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  max-width: 1920px;
+  height: 100%;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../../public/images/pir-shina/IMAGE.png);
+}
+.b-product .product__title {
+  font-weight: 700;
+  font-size: 46px;
+  margin-bottom: 32px;
+}
+.b-product .product__desc {
+  font-weight: 400;
+  font-size: 22px;
+}
+.b-product .product__desc p {
+  margin-bottom: 32px;
+}
+.b-product .product__desc p:last-child {
+  margin: 0;
+}
+.b-product .product__wrapper {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  grid-template-areas: "inner items";
+  column-gap: 124px;
+  padding-block: 96px 183px;
+}
+.b-product .product__inner {
+  grid-area: inner;
+}
+.b-product .product__items {
+  grid-area: items;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  align-content: space-between;
+  column-gap: 100px;
+}
+.b-product .product__item {
+  display: flex;
+  max-width: 300px;
+  justify-content: center;
+  flex-direction: column;
+}
+.b-product .product__item-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.b-product .product__item-desc {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.b-service {
+  position: relative;
+  color: white;
+}
+.b-service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  max-width: 1920px;
+  height: 100%;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #334047 url(../../public/images/pir-shina/Rectangle.png) no-repeat;
+}
+.b-service .service__wrapper {
+  padding-block: 96px 86px;
+}
+.b-service .service__title {
+  font-weight: 700;
+  font-size: 46px;
+  margin-bottom: 32px;
+}
+.b-service .service__desc {
+  font-weight: 400;
+  font-size: 22px;
+}
+.b-service .service__desc p {
+  margin-bottom: 32px;
+}
+.b-service .service__desc p:last-child {
+  margin: 0;
+}
+.b-service .service__wrapper {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  grid-template-areas: "inner items";
+  column-gap: 119px;
+}
+.b-service .service__inner {
+  grid-area: inner;
+}
+.b-service .service__items {
+  grid-area: items;
+  display: grid;
+  grid-template-columns: repeat(3, 385px);
+}
+.b-service .service__item {
+  padding-inline: 60px 45px;
+  display: flex;
+  flex-direction: column;
+}
+.b-service .service__item-desc {
+  list-style: none;
+  padding-left: 0;
+  max-width: 220px;
+  margin: 0;
+}
+.b-service .service__item-desc li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+.b-service .service__item-desc li:last-child {
+  margin: 0;
+}
+.b-service .service__item-desc li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff7d00;
+  display: inline-block;
+}
+.b-service .service__ico {
+  margin-bottom: 32px;
+}
+.b-service .service__item-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  max-width: min-content;
+}
+.b-service .service__item-desc {
+  font-size: 17px;
+  font-weight: 400;
+}
+.b-service .service__btn {
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
